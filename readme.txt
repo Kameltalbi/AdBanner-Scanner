@@ -1,7 +1,7 @@
 === AdWPTracker - Advanced Ad Manager ===
 Contributors: kameltalbi
 Donate link: https://kameltalbi.com/donate
-Tags: ads, advertising, ad manager, mobile ads, sticky footer, adsense, banner, statistics, analytics, monetization
+Tags: ads, advertising, ad-manager, statistics, adsense
 Requires at least: 5.0
 Tested up to: 6.5
 Requires PHP: 7.4
@@ -16,6 +16,12 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 **AdWPTracker** is a complete advertising management solution for WordPress that helps you maximize your ad revenue with powerful features and an intuitive interface.
 
 = 🌟 Key Features =
+
+**📱 Mobile Sticky Footer**
+* Unique sticky footer ad placement for mobile & tablet devices
+* Automatically hidden on desktop for better UX
+* Professional close button with session-based dismissal
+* Perfect for maximizing mobile ad revenue
 
 **🎨 4 Powerful Ad Types**
 * **Image Ads** - Upload via WordPress media library
@@ -48,17 +54,6 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 * French (included)
 * Ready for your language!
 
-= 💎 Premium Features =
-
-**📱 Mobile Sticky Footer (Exclusive!)**
-* Industry-first sticky footer ad for mobile & tablet
-* Automatically hidden on desktop for better UX
-* Professional close button with session-based dismissal
-* Increase mobile ad revenue by up to 300%
-* **Available in Premium version - $49/year**
-
-[Upgrade to Premium](https://adwptracker.com/premium) | [View Demo](https://adwptracker.com/demo)
-
 = Perfect For =
 
 * Publishers looking to maximize ad revenue
@@ -70,7 +65,7 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 
 = Why Choose AdWPTracker? =
 
-AdWPTracker is a complete ad management solution with powerful analytics and easy management. The free version includes everything you need to manage unlimited ads and zones. Upgrade to Premium to unlock the **unique mobile sticky footer** feature that significantly increases mobile ad visibility and CTR.
+AdWPTracker is a complete ad management solution with powerful analytics and easy management. It includes a **unique mobile sticky footer** feature that significantly increases mobile ad visibility and CTR. All features are included for free with unlimited ads and zones.
 
 = Documentation & Support =
 
@@ -140,14 +135,6 @@ Yes! Export your statistics to CSV format for external analysis.
 = How many ads can I create? =
 
 Unlimited! Create as many zones and ads as you need.
-
-= What's the difference between Free and Premium? =
-
-The free version includes all core features: unlimited ads & zones, 4 ad types, statistics, device targeting, and scheduling. Premium adds the exclusive Mobile Sticky Footer feature for $49/year.
-
-= How do I upgrade to Premium? =
-
-Visit [adwptracker.com/premium](https://adwptracker.com/premium) to purchase a license. After activation, the Mobile Sticky Footer feature will be unlocked in your dashboard.
 
 == Screenshots ==
 
