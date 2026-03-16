@@ -827,7 +827,13 @@ class ADWPT_Settings {
         global $wpdb;
         
         $stats_count = $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->prefix}adwpt_stats");
-        $db_size = $wpdb->get_var("SELECT ROUND(((data_length + index_length) / 1024 / 1024), 2) as size FROM information_schema.TABLES WHERE table_schema = '" . DB_NAME . "' AND table_name = '{$wpdb->prefix}adwpt_stats'");
+        $db_size = $wpdb->get_var($wpdb->prepare(
+            "SELECT ROUND(((data_length + index_length) / 1024 / 1024), 2) as size 
+            FROM information_schema.TABLES 
+            WHERE table_schema = %s AND table_name = %s",
+            DB_NAME,
+            $wpdb->prefix . 'adwpt_stats'
+        ));
         $mysql_version = $wpdb->get_var("SELECT VERSION()");
         
         return [

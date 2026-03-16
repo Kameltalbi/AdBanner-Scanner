@@ -1058,6 +1058,7 @@ class ADWPT_Admin {
                 update_option('adwpt_auto_optimize', isset($_POST['auto_optimize']) ? '1' : '0');
                 update_option('adwpt_gdpr_mode', isset($_POST['gdpr_mode']) ? '1' : '0');
                 update_option('adwpt_data_retention', intval($_POST['data_retention']));
+                update_option('adwpt_dark_mode', isset($_POST['dark_mode']) ? '1' : '0');
                 
                 echo '<div class="notice notice-success is-dismissible" style="border-left: 4px solid #10b981;"><p><strong>✅ ' . __('Paramètres enregistrés avec succès !', 'adwptracker') . '</strong></p></div>';
             }
@@ -1103,11 +1104,18 @@ class ADWPT_Admin {
             $auto_optimize = get_option('adwpt_auto_optimize', '0');
             $gdpr_mode = get_option('adwpt_gdpr_mode', '0');
             $data_retention = get_option('adwpt_data_retention', '90');
+            $dark_mode = get_option('adwpt_dark_mode', '0');
             
             // Get database stats
             global $wpdb;
             $stats_count = $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->prefix}adwpt_stats");
-            $db_size = $wpdb->get_var("SELECT ROUND(((data_length + index_length) / 1024 / 1024), 2) as size FROM information_schema.TABLES WHERE table_schema = '" . DB_NAME . "' AND table_name = '{$wpdb->prefix}adwpt_stats'");
+            $db_size = $wpdb->get_var($wpdb->prepare(
+                "SELECT ROUND(((data_length + index_length) / 1024 / 1024), 2) as size 
+                FROM information_schema.TABLES 
+                WHERE table_schema = %s AND table_name = %s",
+                DB_NAME,
+                $wpdb->prefix . 'adwpt_stats'
+            ));
             ?>
             
             <div style="max-width: 900px; margin-top: 20px;">
