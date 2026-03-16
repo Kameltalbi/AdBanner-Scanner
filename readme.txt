@@ -1,19 +1,19 @@
-=== AdWPTracker - Advanced Ad Manager ===
+=== Ad Banner Scanner ===
 Contributors: kameltalbi
 Donate link: https://kameltalbi.com/donate
 Tags: ads, advertising, ad-manager, statistics, adsense
 Requires at least: 5.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 3.6.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Professional WordPress advertising management plugin with unique mobile sticky footer, real-time statistics, device targeting, and advanced analytics.
+Professional WordPress advertising management plugin with mobile sticky footer, real-time statistics, device targeting, and advanced analytics.
 
 == Description ==
 
-**AdWPTracker** is a complete advertising management solution for WordPress that helps you maximize your ad revenue with powerful features and an intuitive interface.
+**Ad Banner Scanner** is a complete advertising management solution for WordPress that helps you maximize your ad revenue with powerful features and an intuitive interface.
 
 = 🌟 Key Features =
 
@@ -63,15 +63,15 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 * Affiliate marketers
 * Anyone needing professional ad management
 
-= Why Choose AdWPTracker? =
+= Why Choose Ad Banner Scanner? =
 
-AdWPTracker is a complete ad management solution with powerful analytics and easy management. It includes a **unique mobile sticky footer** feature that significantly increases mobile ad visibility and CTR. All features are included for free with unlimited ads and zones.
+Ad Banner Scanner is a complete ad management solution with powerful analytics and easy management. It includes a **unique mobile sticky footer** feature that significantly increases mobile ad visibility and CTR. All features are included for free with unlimited ads and zones.
 
 = Documentation & Support =
 
-* [Documentation](https://github.com/Kameltalbi/WPAdTracker)
-* [GitHub Repository](https://github.com/Kameltalbi/WPAdTracker)
-* [Report Issues](https://github.com/Kameltalbi/WPAdTracker/issues)
+* [Documentation](https://github.com/Kameltalbi/ad-banner-scanner)
+* [GitHub Repository](https://github.com/Kameltalbi/ad-banner-scanner)
+* [Report Issues](https://github.com/Kameltalbi/ad-banner-scanner/issues)
 
 == Installation ==
 
@@ -148,8 +148,8 @@ Unlimited! Create as many zones and ads as you need.
 
 == Changelog ==
 
-= 3.6.0 - 2024-03-16 =
-* Initial public release
+= 1.0.0 - 2024-03-16 =
+* Initial release
 * Mobile sticky footer feature
 * 4 ad types (Image, HTML, Text, Video)
 * Real-time statistics tracking
@@ -162,8 +162,8 @@ Unlimited! Create as many zones and ads as you need.
 
 == Upgrade Notice ==
 
-= 3.6.0 =
-Initial release with all core features including unique mobile sticky footer, real-time statistics, and advanced targeting.
+= 1.0.0 =
+Initial release with all core features including mobile sticky footer, real-time statistics, and advanced targeting.
 
 == Additional Info ==
 
