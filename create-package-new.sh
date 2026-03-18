@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 
 # Variables
 PLUGIN_SLUG="ad-banner-scanner"
-PLUGIN_DIR="/Users/kameltalbi/Desktop/Wpadtracker"
+PLUGIN_DIR="/Users/kameltalbi/repo2"
 OUTPUT_DIR="/Users/kameltalbi/Desktop"
 TEMP_DIR="${OUTPUT_DIR}/${PLUGIN_SLUG}"
 ZIP_FILE="${OUTPUT_DIR}/${PLUGIN_SLUG}.zip"

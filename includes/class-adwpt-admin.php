@@ -225,8 +225,8 @@ class ADWPT_Admin {
     public function add_admin_menu() {
         // Main menu with modern icon
         add_menu_page(
-            __('AdWPtracker', 'adwptracker'),
-            __('AdWPtracker', 'adwptracker'),
+            __('WPAdTracker', 'adwptracker'),
+            __('WPAdTracker', 'adwptracker'),
             'edit_posts',
             'adwptracker',
             [$this, 'render_dashboard'],
@@ -237,8 +237,8 @@ class ADWPT_Admin {
         // Dashboard submenu
         add_submenu_page(
             'adwptracker',
-            __('Dashboard', 'adwptracker'),
-            __('📊 Dashboard', 'adwptracker'),
+            __('Dashboard', 'ad-banner-scanner'),
+            __('📊 Dashboard', 'ad-banner-scanner'),
             'edit_posts',
             'adwptracker',
             [$this, 'render_dashboard']
@@ -249,8 +249,8 @@ class ADWPT_Admin {
         // Liste des Annonces & Zones (shortcodes centralisés)
         add_submenu_page(
             'adwptracker',
-            __('Liste des Annonces & Zones', 'adwptracker'),
-            __('📋 Liste des Annonces & Zones', 'adwptracker'),
+            __('Liste des Annonces & Zones', 'ad-banner-scanner'),
+            __('📋 Liste des Annonces & Zones', 'ad-banner-scanner'),
             'edit_posts',
             'adwptracker-liste',
             [$this, 'render_liste_page']
