@@ -227,7 +227,7 @@ class ADWPT_Admin {
         add_menu_page(
             __('AdWPtracker', 'adwptracker'),
             __('AdWPtracker', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'adwptracker',
             [$this, 'render_dashboard'],
             'dashicons-chart-area',
@@ -239,7 +239,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Dashboard', 'adwptracker'),
             __('📊 Dashboard', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'adwptracker',
             [$this, 'render_dashboard']
         );
@@ -251,7 +251,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Liste des Annonces & Zones', 'adwptracker'),
             __('📋 Liste des Annonces & Zones', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'adwptracker-liste',
             [$this, 'render_liste_page']
         );
@@ -261,7 +261,7 @@ class ADWPT_Admin {
             'adwptracker',
             '',
             '<span style="display:block; margin: 5px 0; border-top: 1px solid #ddd;"></span>',
-            'manage_options',
+            'edit_posts',
             '#'
         );
         
@@ -270,7 +270,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Annonces', 'adwptracker'),
             __('📢 Annonces', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'edit.php?post_type=adwpt_ad'
         );
         
@@ -279,7 +279,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Nouvelle Annonce', 'adwptracker'),
             __('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✨ Nouvelle Annonce', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'post-new.php?post_type=adwpt_ad'
         );
         
@@ -288,7 +288,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Zones', 'adwptracker'),
             __('🎯 Zones', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'edit.php?post_type=adwpt_zone'
         );
         
@@ -297,7 +297,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Nouvelle Zone', 'adwptracker'),
             __('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✨ Nouvelle Zone', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'post-new.php?post_type=adwpt_zone'
         );
         
@@ -308,7 +308,7 @@ class ADWPT_Admin {
             'adwptracker',
             '',
             '<span style="display:block; margin: 5px 0; border-top: 1px solid #ddd;"></span>',
-            'manage_options',
+            'edit_posts',
             '#'
         );
         
@@ -317,7 +317,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Statistiques', 'adwptracker'),
             __('📈 Statistiques', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'adwptracker-stats',
             [$this, 'render_stats_page']
         );
@@ -329,7 +329,7 @@ class ADWPT_Admin {
             'adwptracker',
             '',
             '<span style="display:block; margin: 5px 0; border-top: 1px solid #ddd;"></span>',
-            'manage_options',
+            'edit_posts',
             '#'
         );
         
@@ -350,7 +350,7 @@ class ADWPT_Admin {
             'adwptracker',
             '',
             '<span style="display:block; margin: 5px 0; border-top: 1px solid #ddd;"></span>',
-            'manage_options',
+            'edit_posts',
             '#'
         );
         
@@ -359,7 +359,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Documentation', 'adwptracker'),
             __('📖 Documentation', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'adwptracker-docs',
             [$this, 'render_docs_page']
         );
@@ -369,7 +369,7 @@ class ADWPT_Admin {
             'adwptracker',
             __('Support', 'adwptracker'),
             __('💬 Support', 'adwptracker'),
-            'manage_options',
+            'edit_posts',
             'adwptracker-support',
             [$this, 'render_support_page']
         );
@@ -2163,7 +2163,7 @@ if (function_exists('adwptracker_display_zone')) {<br>
         }
         
         // Check permissions
-        if (!current_user_can('manage_options')) {
+        if (!current_user_can('edit_posts')) {
             wp_die(__('Vous n\'avez pas les permissions nécessaires.', 'adwptracker'));
         }
         
